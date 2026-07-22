@@ -1,0 +1,17 @@
+/* Editor-only styling — never loaded on the public site.
+   Surfaces which copy is still [NEW]/draft so Samantha can spot it while editing.
+   See CONTENT-STATUS.md for the full list of draft lines by page/section. */
+
+.cardo-draft-flag {
+	display: inline-block;
+	font-size: 0.7rem;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	padding: 0.15em 0.6em;
+	margin-inline-start: 0.5em;
+	border: 1px solid #B5502F;
+	color: #B5502F;
+	border-radius: 2px;
+	opacity: 0.85;
+	vertical-align: middle;
+}

@@ -1,0 +1,69 @@
+/*
+Theme Name: Cardo
+Theme URI: https://cardo.com
+Author: Cardo Operations Inc.
+Author URI: https://cardo.com
+Description: Custom block theme for Cardo Operations Inc. — operational strategy and systems implementation for independent ICI multi-trade and mechanical contractors. Built as a lightweight full-site-editing theme with all visual identity (color, type, logo) driven from theme.json so it can be restyled centrally once brand is locked. See README.md for open items.
+Requires at least: 6.4
+Tested up to: 6.6
+Requires PHP: 7.4
+Version: 0.1.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: cardo
+Tags: full-site-editing, block-patterns, one-page, business
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* Fallback styles only — all design tokens (color, type, spacing) live in theme.json. */
+
+/* Draft-copy flags are for editors reviewing content in wp-admin only —
+   see assets/css/editor.css. Hidden on the live, public-facing site. */
+.cardo-draft-flag {
+	display: none;
+}
+
+/* Contact form (rendered by the [cardo_contact_form] shortcode, inc/contact-form.php) */
+.cardo-contact-form p {
+	margin-bottom: 1.25rem;
+}
+
+.cardo-contact-form label {
+	display: block;
+	font-weight: 600;
+	margin-bottom: 0.35rem;
+}
+
+.cardo-contact-form input[type="text"],
+.cardo-contact-form input[type="email"],
+.cardo-contact-form select,
+.cardo-contact-form textarea {
+	display: block;
+	width: 100%;
+	font: inherit;
+	padding: 0.65em 0.75em;
+	border: 1px solid var(--wp--preset--color--steel);
+	border-radius: 2px;
+	background: var(--wp--preset--color--white);
+	color: var(--wp--preset--color--charcoal);
+}
+
+.cardo-contact-form button[type="submit"] {
+	border: none;
+	cursor: pointer;
+}
+
+.cardo-honeypot {
+	position: absolute;
+	left: -9999px;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+.cardo-form-confirmation {
+	border: 1px solid var(--wp--preset--color--accent);
+	padding: var(--wp--preset--spacing--40);
+}
