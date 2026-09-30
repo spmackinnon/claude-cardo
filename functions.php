@@ -77,3 +77,4 @@ add_shortcode( 'cardo_year', fn() => esc_html( gmdate( 'Y' ) ) );
 require CARDO_THEME_DIR . '/inc/settings.php';
 require CARDO_THEME_DIR . '/inc/contact-form.php';
 require CARDO_THEME_DIR . '/inc/booking.php';
+require CARDO_THEME_DIR . '/inc/stripe-checkout.php';
